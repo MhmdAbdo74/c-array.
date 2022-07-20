@@ -1,1 +1,34 @@
-first line in file2.txt
+#include <iostream>
+using namespace std;
+int main() {
+    char ch2=90;
+    cout<<ch2<<endl;//datatype of char must print char
+    cout<<(int) 'A' <<endl; //datatype of A must print intger number
+    cout<<(int)'a' +26-1<<endl;
+    char ch;
+    cin>>ch;
+    if (ch>='A'&&ch<='Z'){
+        cout<<"upper"<<endl;
+        ch=ch-'A'+'a'; //upeer to lower ch=ch+32
+        cout<<ch<<endl;
+    }
+    else if (ch>='a'&&ch<='z'){
+        cout<<"lower"<<endl;
+    }
+    else if(ch>=0&&ch<=9){
+        cout<<"digit"<<endl;
+    }
+    else{
+        cout<<"is negither digit or letter"<<endl;
+    }
+    string name;
+    getline(cin,name);
+    cout<<name<<endl;
+int count=0;
+    string str=" ";
+   while (cin>>str){
+       count++;
+   }
+   cout<<count<<endl;
+    return 0;
+}
